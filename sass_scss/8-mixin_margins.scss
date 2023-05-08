@@ -1,0 +1,12 @@
+/* 8. Margin mixin - Write a Sass file that assigns: You must use a mixin */
+@mixin margin-mixin($value) {
+    margin-left:$value;
+    margin-right:$value;
+}
+body {
+    @include margin-mixin(10px);
+}
+  
+  div {
+    @include margin-mixin(15px);
+ }
