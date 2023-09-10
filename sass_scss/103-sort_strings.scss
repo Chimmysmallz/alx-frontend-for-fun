@@ -1,1 +1,12 @@
 /* 16. Sort!  - Write a Sass file that sorts the variable $list_to_sort and prints the sorted list in the debug output. */
+
+// Define the list to sort
+$list_to_sort: 30, 10, 50, 20, 40;
+
+// Sort the list using the sort() function
+$sorted_list: sort($list_to_sort);
+
+// Loop through the sorted list and print each item in the debug output
+@each $item in $sorted_list {
+  @debug $item;
+}
