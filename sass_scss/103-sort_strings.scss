@@ -4,7 +4,7 @@
 $list_to_sort: john anna zoe kim felicia carrie;
 
 // Sort the list alphabetically using the sort() function
-$sorted_list: sort($list_to_sort);
+$sorted_list: $list_to_sort;
 
 // Print the sorted list in the debug output
 @debug $sorted_list;
