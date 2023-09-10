@@ -1,7 +1,9 @@
 /* 16. Sort!  - Write a Sass file that sorts the variable $list_to_sort and prints the sorted list in the debug output. */
 
-// Define the list to sort
-$list_to_sort: john, anna, zoe, kim, felicia, carrie;
+/* Sort and print a list alphabetically */
+
+// Define the list to sort using parentheses
+$list_to_sort: (john, anna, zoe, kim, felicia, carrie);
 
 // Sort the list alphabetically using the sort() function
 $sorted_list: sort($list_to_sort);
