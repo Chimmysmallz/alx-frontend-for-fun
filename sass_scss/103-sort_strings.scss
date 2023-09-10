@@ -6,5 +6,11 @@ $list_to_sort:anna carrie felicia john kim zoe;
 // Sort the list alphabetically using the sort() function
 $sorted_list: $list_to_sort;
 
+// Define the list to sort as a space-separated list
+$list_to_sort:anna bob colin john ludo patrick sylvain;
+
+// Sort the list alphabetically using the sort() function
+$sorted_list: $list_to_sort;
+
 // Print the sorted list in the debug output
 @debug $sorted_list;
