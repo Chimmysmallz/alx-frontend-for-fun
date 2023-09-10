@@ -1,18 +1,10 @@
 /* 16. Sort!  - Write a Sass file that sorts the variable $list_to_sort and prints the sorted list in the debug output. */
 
-/* Sort and print a list alphabetically with "|" delimiter */
-
-// Define the list to sort as a string with "|" delimiter
+// Define the list to sort using parentheses
 $list_to_sort: "john|anna|zoe|kim|felicia|carrie";
 
-// Split the string into a list using the str-slice() function
-$split_list: str-slice($list_to_sort, $delimiter: "|");
-
 // Sort the list alphabetically using the sort() function
-$sorted_list: sort($split_list);
+$sorted_list: sort($list_to_sort);
 
-// Join the sorted list into a string with "|" delimiter
-$sorted_string: join($sorted_list, $separator: "|");
-
-// Print the sorted string in the debug output
-@debug $sorted_string;
+// Print the sorted list in the debug output
+@debug $sorted_list;
