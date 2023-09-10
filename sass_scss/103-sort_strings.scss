@@ -1,34 +1,10 @@
 /* 16. Sort!  - Write a Sass file that sorts the variable $list_to_sort and prints the sorted list in the debug output. */
 
-/* Sort and print a list */
-
 // Define the list to sort
 $list_to_sort: john, anna, zoe, kim, felicia, carrie;
 
-// Initialize an empty list for the sorted result
-$sorted_list: ();
+// Sort the list using the sort() function
+$sorted_list: sort($list_to_sort);
 
-// Loop through the list to sort
-@each $item in $list_to_sort {
-  // Initialize variables for sorting
-  $min_item: null;
-  $min_value: null;
-
-  // Find the minimum item in the list
-  @each $inner_item in $list_to_sort {
-    @if $min_item == null or $inner_item < $min_value {
-      $min_item: $inner_item;
-      $min_value: $inner_item;
-    }
-  }
-
-  // Add the minimum item to the sorted list and remove it from the original list
-  $sorted_list: append($sorted_list, $min_item);
-  $list_to_sort: remove($list_to_sort, $min_item);
-}
-
-// Loop through the sorted list and print each item in the debug output
-@each $item in $sorted_list {
-  @debug $item;
-}
-
+// Print the sorted list in the expected format
+@debug "|" + join($sorted_list, "|") + "|";
