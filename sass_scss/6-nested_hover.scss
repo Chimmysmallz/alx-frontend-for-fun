@@ -1,8 +1,9 @@
 /* 6. Nested hover - Write a Sass file that assigns: You must use nested declarations */
+
 button {
     color: #FF0000; // Set the default text color to red (#FF0000)
 
     &:hover {
-        color: #00FF00; // Change the text color to green (#00FF00) when hovering
+        color: #00FF00; // Change the text color to green (#00FF00) on hover
     }
 }
