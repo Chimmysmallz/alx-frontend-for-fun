@@ -1,10 +1,20 @@
 /* 16. Sort!  - Write a Sass file that sorts the variable $list_to_sort and prints the sorted list in the debug output. */
 
-// Define the list to sort
-$list_to_sort: john, anna, zoe, kim, felicia, carrie;
+// First list
+$list_to_sort_1: john, anna, zoe, kim, felicia, carrie;
 
-// Sort the list using the sort() function
-$sorted_list: sort($list_to_sort);
+// Sort the first list
+$sorted_list_1: sort($list_to_sort_1);
 
-// Print the sorted list in the expected format
-@debug "|" + join($sorted_list, "|") + "|";
+// Print the sorted first list
+@debug "First sorted list: " + join($sorted_list_1, ", ");
+
+// Second list
+$list_to_sort_2: bob, anna, sylvain, john, ludo, colin, patrick;
+
+// Sort the second list
+$sorted_list_2: sort($list_to_sort_2);
+
+// Print the sorted second list
+@debug "Second sorted list: " + join($sorted_list_2, ", ");
+
